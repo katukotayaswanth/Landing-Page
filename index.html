@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Landing page</title>
+    <script src="https://kit.fontawesome.com/63ad4101ef.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id = "header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class = "logo">
+            <ul id ="sidemenu">
+                <li><a href = "#header">Home</a></li>
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#services">Services</a></li>
+                <li><a href = "#Portfolio">Portfolio</a></li>
+                <li><a href = "#contact">Contact</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Developer</p>
+            <h1>Hi,My name is <br> <span>Yaswanth katukota</span</h1>
+        </div>
+    </div>
+</div>
+<!---------about----------->
+<div id="about">
+    <div class ="container">
+        <div class = "row">
+            <div class = "about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                
+                  <h1 class = "sub-title">About me</h1>
+                  <br>
+            <p>Welcome to my personal website! I'm Yaswanth Katukota, a software engineer with a Master's degree in Computer Science from California State University Dominguez Hills and a Bachelor's in Electronics & Communication Engineering from Sathyabama University. I have expertise in Java, Python, JavaScript, ReactJS, HTML5, CSS, MySQL, and SQL, with experience in frameworks like J2EE, Spring Boot, and microservices. I previously worked as an Associate Software Engineer at Mphasis PVT LTD, where I debugged code and implemented advanced monitoring systems. I developed a 'To-Do List' web application, showcasing my full stack skills, and have leadership experience as an Organizations Commissioner at CSU Dominguez Hills. I am passionate about solving complex problems and creating innovative solutions.
+                
+                </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+                <p class="tab-links"onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                    <li><span>Programming & Web</span><br> Java , Python,JavaScript,Html5,css.</li>
+                    <li><span>DataBases & Tools</span> <br>MySQL,SQL,Jupyter Notebook,Visual studio,github,<br>Postman,Splunk,Ecilpse,IntelliJ,Confluence,Jira.</li>
+                    <li><span>Frameworks & Libraries</span><br>J2EE,Spring Boot,REST API,Microservices,JSON,<br>XML,React,Node.js,Bootstrap,Apache Tomcat.</li>
+                    </ul>
+                </div>
+            <div class="tab-contents" id="Experience">
+                <ul>
+                    <li><span>Jun 2021 - Jul 2022</span><br>Associate Software Engineer At Mphasis PVT LTD.</li>
+                    <li><span>Sep 2023 - Jul 2024</span> <br>Board of Director(Organizations Commissioner) at ASI CSUDH.</li>
+                    </ul>
+                </div>
+            <div class="tab-contents" id="Education">
+                <ul>
+                    <li><span>Aug 2022 - May 2024  </span><br>M.S in CS From Californis State University,Dominguez Hills.</li>
+                    <li><span>Jul 2017 - May 2021  </span> <br>B.E in ECE From Sathyabama University ,Chennai .</li>
+                    
+                    </ul>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------Services---------------------------------------------->
+<div id = "services">
+
+    <div class = "container">
+        <h1 class = "sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Developer</h2>
+                <p>I am a skilled Web Developer with over two years of experience in JAVA/J2EE technologies, enhancing software reliability at Mphasis and developing AI projects as a Headstarter Software Engineering fellow.</p>
+                 <a href = 'images/mycv.pdf'>Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gavel"></i>
+                <h2>Advocacy</h2>
+                <p>  Organizations Commissioner<br>Board of Director in Associated Students Inc, CSU Dominguez Hills<br>•	Contributed to conduct, organize, and participate in many activities for California State University, Dominguez Hills.<br>•	Arranged and chaired Organization Commission meetings by Providing financial Assistance to all clubs and Organizations in the University </p>
+                 <a href = 'images/mycv.pdf'>Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------portfolio------------------------>
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="Work 1">
+                <div class="layer">
+                    <h3>Deciphering Complex Genetic Patterns</h3>
+                    <p>Utilized advanced machine learning techniques for SNP binary classification, achieving insights into genetic data.</p>
+                    <a href="https://github.com/katukotayaswanth/Deciphering-Complex-Genetic-Patterns-Advanced-Machine-Learning-Approaches-for-SNP-Binary-Classifica "><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="Work 2">
+                <div class="layer">
+                    <h3>To-do List Web Application</h3>
+                    <p>Developed a full-stack web application using HTML, CSS, Bootstrap, Angular, JavaScript, TypeScript, and J2EE.</p>
+                    <a href="https://github.com/katukotayaswanth/mphyash"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="Work 3">
+                <div class="layer">
+                    <h3>Facial Recognition Using Machine Learning</h3>
+                    <p>Implemented geometric and photometric methods, optimizing algorithms using PCA and neural networks.</p>
+                    <a href="https://github.com/katukotayaswanth/Facial-recognition-using-machine-leqrning"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="images/mycv.pdf"class = "btn">See more</a>
+    </div>
+</div>
+
+<!-----------------contact-------------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-envelope"></i> katukotayaswanth@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +1(669)-291-4755</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/katukota.yaswanth"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/yaswant7777"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/yaswanth_katukota/?next=%2F&hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/yaswanth-katukota-192157160/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/mycv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name = "submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Made With <i class="fa-solid fa-heart"></i> By Yaswanth katukota</p>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+    
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+}
+    
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyqkMAfmBceX542EeVQuJYJiEF3TKU36CFcVAnABSeYE-1vIh--nifwNUIwZkH2NheQlg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+  
+    const startTime = performance.now();
+
+    form.addEventListener('submit', e => {
+  e.preventDefault();
+  
+  const startTime = performance.now();
+
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        const endTime = performance.now();
+        console.log(`Message sent in ${endTime - startTime}ms`);
+        msg.innerHTML = "Message Sent Successfully";
+        setTimeout(function() {
+            msg.innerHTML = "";
+        }, 5000);
+        form.reset();
+    })
+    .catch(error => console.error('Error!', error.message));
+});
+
+  </script>
+    
+</body>
+</html>
